@@ -1,6 +1,6 @@
 :root 
 {
-    --color_principal: green;
+    --color_principal: rgb(153, 13, 55);
     --color_secundario: yellowgreen;
     --color_terciario: rgb(190, 255, 70);
 }
@@ -18,7 +18,7 @@ body
     background-color: rgb(255, 255, 255);
     display: grid;
     place-items: center;
-    color: rgb(131, 2, 30);
+    color: var(--color_principal);
 }
 
 .caja_principal 
@@ -88,7 +88,7 @@ body
 
 .primary-button
 {
-    background-color:rgb(172, 24, 93);
+    background-color:var(--color_principal);
     border-radius: 8px;
     border: none;
     color: white;
