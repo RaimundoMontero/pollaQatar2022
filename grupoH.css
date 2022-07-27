@@ -41,12 +41,14 @@
     font-family: quicksand;
     font-size: 2rem;
     border: none;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .cuerpo_principal
 {
     width: 100%;
-    height: 500px;
+    height: 200px;
     display: grid;
     place-items: center;
 }
@@ -54,11 +56,47 @@
 .fixture
 {
     width: 300px;
-    height: 480px;
-    background-color: papayawhip;
+    height: 200px;
     display: grid;
-    grid-template-columns: 50px 100px 100px 50px;
-    grid-template-rows: 80px 80px 80px 80px 80px 80px ;
+    grid-template-columns: 70px 50px 30px 30px 50px 70px ;
+    grid-template-rows: 30px 30px 30px 30px 30px 30px ;
+}
+
+.tabla
+{
+    width: 300px;
+    height: 160px;
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr 2fr;
+    grid-template-rows: 0.6fr 1fr 1fr 1fr 1fr;
+}
+
+.titulo_tabla
+{
+    display: grid;
+    place-items: center;
+    border: solid 0.5px white;
+    color: white;
+}
+
+.posicion
+{
+    background-color: var(--color_principal);
+}
+
+.pais
+{
+    background-color: var(--color_principal);
+}
+
+.puntos
+{
+    background-color: var(--color_principal);
+}
+
+.dif
+{
+    background-color: var(--color_principal);
 }
 
 .div_cajas
@@ -70,15 +108,25 @@
 
 .boton_goles 
 {
-    width: 40px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
 }
 
 .bandera
 {
-    width: 90px;
-    height: 80px;
+    width: 50px;
+    height: 28px;
     object-fit:contain;
+}
+
+.nombre_pais
+{
+    font-size: 10px;
+}
+
+.dif4
+{
+    background-color: yellowgreen;
 }
 
 /* .div1
