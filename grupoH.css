@@ -3,15 +3,25 @@
     --color_principal: rgb(153, 13, 55);
     --color_secundario: yellowgreen;
     --color_terciario: rgb(190, 255, 70);
+    --white: #FFFFFF;
+    --black: #000000;
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
 }
 
-.body
-{
+  body 
+  {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
     display: grid;
     place-items: center;
     margin-top: 0px;
 }
 
+ 
 .header_principal
 {
     height: 80px;
@@ -30,6 +40,7 @@
     place-items: center;
     font-family: quicksand;
     font-size: 2rem;
+    border: none;
 }
 
 .cuerpo_principal

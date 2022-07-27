@@ -105,7 +105,6 @@ body
     margin-bottom: 10px; 
 }
 
-
 .logo 
 {
     width: 100px;
@@ -119,3 +118,70 @@ body
     width: 100%;
     background-color: rgb(153, 13, 55);
 }
+
+  .navbar
+  {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--color_principal);
+    color: white;
+    list-style: none;
+    text-decoration: none;
+  }
+
+  .listado 
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px;
+  }
+
+  .listado a
+  {
+    color: white; 
+    text-decoration: none;
+    padding: 7px;
+  }
+
+  .hola
+  {
+    border-right: solid 1px rgb(255, 255, 255);
+    
+  }
+
+  .listado li
+  {
+    list-style: none;
+  }
+
+
+
+  .navbar ul li a:hover
+  {
+    color: yellow; 
+    font-weight: bold;
+  }
+
+  @media (max-width: 440px) 
+  {
+  
+   nav
+    {
+        margin: 0px;
+        display: grid;
+        place-items: center;
+        width: 100%;
+        font-size: 10px;
+        background-color: yellowgreen;
+        color: white;
+      }
+
+      ul .listado
+      {
+        margin: 0px;
+        display: grid;
+        place-items: center;
+      }
+  }
