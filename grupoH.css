@@ -35,14 +35,37 @@
 .header
 {
     height: 40px;
-    width: 100%;
+    width: 300px;
     display: grid;
-    place-items: center;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     font-family: quicksand;
     font-size: 2rem;
     border: none;
     margin-bottom: 20px;
-    margin-top: 20px;
+    margin-top: 10px;
+}
+
+.grupo
+{
+    border-radius: 70%;
+    display: grid;
+    place-items: center;
+}
+
+.grupo:hover
+{
+    cursor: pointer;
+    background-color: papayawhip;
+}
+
+.grupoH 
+{
+    border-radius: 70%;
+    background-color: yellow;
+    display: grid;
+    place-items: center;
+    font-weight: bold;
 }
 
 .cuerpo_principal
@@ -51,6 +74,7 @@
     height: 200px;
     display: grid;
     place-items: center;
+    margin:0px;
 }
 
 .fixture
@@ -77,6 +101,15 @@
     place-items: center;
     border: solid 0.5px white;
     color: white;
+}
+
+.cajas_tabla
+{
+    background-color: white;
+    border: solid 0.5px grey;
+    text-align: center;
+    text-justify: center;
+    padding-top: 5px;
 }
 
 .posicion
@@ -110,6 +143,10 @@
 {
     width: 20px;
     height: 20px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    font-size: 15px;
 }
 
 .bandera
@@ -122,11 +159,6 @@
 .nombre_pais
 {
     font-size: 10px;
-}
-
-.dif4
-{
-    background-color: yellowgreen;
 }
 
 /* .div1
@@ -252,3 +284,31 @@
 {
     background-color: rgb(231, 60, 154);
 } */
+
+.login-button
+{
+    background-color:var(--color_principal);
+    opacity: 80%;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    width: 180px;
+    height: 20px;
+    cursor: pointer;
+    font-size:0.8rem;
+    margin-top: 30px;
+}
+
+.login-button:hover
+{
+    background-color:var(--color_principal);
+    color: yellow;
+    opacity: 100%;
+    border-radius: 8px;
+    border: none;
+    width: 180px;
+    height: 20px;
+    cursor: pointer;
+    font-size:0.8rem;
+    margin-top: 30px;
+}
