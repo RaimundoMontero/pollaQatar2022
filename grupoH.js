@@ -1,17 +1,17 @@
-const goles1 = document.querySelector(".boton_goles1");
-const goles2 = document.querySelector(".boton_goles2");
+const goles1 = document.querySelector(".boton_goles1");// elemento input uruguay1
+const goles2 = document.querySelector(".boton_goles2");// elemento input corea1
 const goles3 = document.querySelector(".boton_goles3");
 const goles4 = document.querySelector(".boton_goles4");
-const goles5 = document.querySelector(".boton_goles5");
+const goles5 = document.querySelector(".boton_goles5");// elemento input corea2
 const goles6 = document.querySelector(".boton_goles6");
 const goles7 = document.querySelector(".boton_goles7");
-const goles8 = document.querySelector(".boton_goles8");
-const goles9 = document.querySelector(".boton_goles9");
+const goles8 = document.querySelector(".boton_goles8");// elemento input uruguay2
+const goles9 = document.querySelector(".boton_goles9");// elemento input corea3
 const goles10 = document.querySelector(".boton_goles10");
 const goles11= document.querySelector(".boton_goles11");
-const goles12 = document.querySelector(".boton_goles12");
+const goles12 = document.querySelector(".boton_goles12");// elemento input uruguay3
 
-const pais1 = document.querySelector(".pais1");
+const pais1 = document.querySelector(".pais1"); //elemento div de la tabla, columna pais
 const pais2 = document.querySelector(".pais2");
 
 goles1.addEventListener("input", escribirGoles);
@@ -64,14 +64,21 @@ function escribirGoles()
     pais2.innerText = puntosEquipoUno;
     
     if(Number(goles1.value) > Number(goles2.value)) 
-    {
-        puntosEquipo1A = 100;
-    } else if(Number(goles1.value) == Number(goles2.value))
-    {
-        puntosEquipo1A = 1;
-    } else 
-    {
-        puntosEquipo1A = 0;
+        {
+            console.log('goles1')
+            puntosEquipo1A = 100;
+        } 
+    else {
+        if(Number(goles1.value) == Number(goles2.value))
+            {
+                console.log('goles1 = goles2')
+                puntosEquipo1A = 1;
+            } 
+        else 
+        {
+            console.log('goles2')
+            puntosEquipo1A = 0;
+        }
     }
 
     if(Number(goles8.value) > Number(goles7.value)) 
